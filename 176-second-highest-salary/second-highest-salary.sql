@@ -1,0 +1,6 @@
+-- Write your PostgreSQL query statement below
+SELECT (
+    Select distinct salary as SecondHighestSalary from Employee
+    order by salary desc
+    limit 1 offset 1
+) as SecondHighestSalary
